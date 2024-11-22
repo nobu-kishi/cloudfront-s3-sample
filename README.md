@@ -9,18 +9,20 @@
 ├── README.md
 ├── content
 │   └── index.html
-├── index.html
-├── main.tf
-├── module
-│   ├── cloudfront
-│   │   ├── main.tf
-│   │   ├── outputs.tf
-│   │   └── variables.tf
-│   └── origin_s3
+├── envs
+│   └── dev
 │       ├── main.tf
-│       ├── outputs.tf
-│       └── variables.tf
-└── terraform.tfvars
+│       ├── terraform.tfvars
+│       └── variable.tf
+└── module
+    ├── cloudfront
+    │   ├── main.tf
+    │   ├── outputs.tf
+    │   └── variables.tf
+    └── origin_s3
+        ├── main.tf
+        ├── outputs.tf
+        └── variables.tf
 ```
 
 ## 構築方法
@@ -36,5 +38,5 @@ terraform apply
 
 3. S3へ静的コンテンツを配置
 ```sh
-aws s3 cp content/ s3://dev-cloudfrontWithS3 --recursive
+aws s3 cp content/ s3://dev-cloudfront-with-s3-kishi --recursive
 ```
