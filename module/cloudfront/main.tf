@@ -71,9 +71,11 @@ resource "aws_cloudfront_response_headers_policy" "custom-res-header" {
     }
   }
 
-  remove_headers_config {
+  custom_headers_config {
     items {
       header = "Server"
+      value = "Server"
+      override = true
     }
   }
 }

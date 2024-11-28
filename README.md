@@ -1,4 +1,4 @@
-# CloudFrontWithS3-Terraform
+# cloudfront-s3-sample
 
 ## 使用技術
 - Terraform v1.9.8
@@ -38,5 +38,5 @@ terraform apply
 
 3. S3へ静的コンテンツを配置
 ```sh
-aws s3 cp content/ s3://dev-cloudfront-with-s3-kishi --recursive
+aws s3 cp content/ s3://dev-cloudfront-s3-sample --recursive
 ```

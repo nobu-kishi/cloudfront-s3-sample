@@ -3,5 +3,5 @@
 #--------------------------------------------------------------
 
 region = "ap-northeast-1"
-name   = "cloudfront-with-s3-kishi"
+name   = "cloudfront-s3-sample"
 env    = "dev"
